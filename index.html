@@ -55,6 +55,13 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- AOS visibility fallback (prevents hidden sections if JS fails) -->
+    <style>
+      /* If AOS JS doesn't run, elements with data-aos can stay invisible. This keeps them visible. */
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+    </style>
+
+
 </head>
 <body class="bg-brandSoft text-brand scroll-smooth">
 
@@ -82,6 +89,14 @@
             <a href="#digitale-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Digitale Leistungen</a>
             <a href="#analoge-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Analoge Leistungen</a>
           </div>
+        </div>
+
+        <div id="leistungenMenu"
+              class="absolute left-0 mt-3 w-64 rounded-2xl bg-white shadow-xl border border-slate-100 p-2 hidden">
+          <a href="#leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Leistungen im Überblick</a>
+          <a href="#qualitaet-slogan" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Qualität &amp; Slogan</a>
+          <a href="#team" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Team</a>
+          <a href="#kontakt" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Kontakt</a>
         </div>
 
         <a href="#team" class="hover:text-brandGoldDark">Team</a>
@@ -166,47 +181,12 @@
           <div class="relative">
             <!-- Hero image (одоо placeholder, дараа нь өөрийн зургаар солино) -->
             <div class="overflow-hidden rounded-3xl shadow-2xl shadow-sky-100 border border-slate-100 mb-4">
-              <img src="images/Wt6CIH7t1f9SOb3g46K28.png"
+              <img src="images/0001.png"
                    alt="Dentallabor mit moderner 3D-Technik"
                    class="w-full h-64 md:h-80 object-cover">
             </div>
 
             <!-- Floating info card -->
-            <div class="absolute -bottom-6 left-4 right-4">
-              <div class="rounded-2xl bg-white/95 backdrop-blur shadow-xl border border-slate-100 p-4 text-xs md:text-sm">
-                <div class="flex items-center justify-between mb-3">
-                  <div>
-                    <p class="text-[11px] font-semibold text-brandGoldDark uppercase tracking-wide">
-                      Digitaler Workflow
-                    </p>
-                    <p class="text-slate-600 text-xs">
-                      3D-Scans · CAD/CAM · 3D-Druck
-                    </p>
-                  </div>
-                  <span class="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-medium text-emerald-700">
-                    Präzision &amp; Passgenauigkeit
-                  </span>
-                </div>
-
-                <div class="grid grid-cols-2 gap-3 text-[11px] text-slate-600">
-                  <div class="rounded-xl bg-slate-50 p-3">
-                    <p class="font-semibold text-slate-800 mb-1 text-xs">Festsitzender Zahnersatz</p>
-                    <p>Kronen, Brücken, Veneers aus Keramik &amp; Zirkon.</p>
-                  </div>
-                  <div class="rounded-xl bg-slate-50 p-3">
-                    <p class="font-semibold text-slate-800 mb-1 text-xs">Schienen &amp; Mundschutz</p>
-                    <p>Knirscherschienen, CMD, Sportmundschutz.</p>
-                  </div>
-                  <div class="rounded-xl bg-slate-50 p-3">
-                    <p class="font-semibold text-slate-800 mb-1 text-xs">Implantatprothetik</p>
-                    <p>Implantatgetragener Zahnersatz im CAD/CAM-Verfahren.</p>
-                  </div>
-                  <div class="rounded-xl bg-slate-50 p-3">
-                    <p class="font-semibold text-slate-800 mb-1 text-xs">Digitale Modelle</p>
-                    <p>3D-Modelle und Prototypen mit modernem 3D-Druck.</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -635,7 +615,50 @@
 
     <!-- LEISTUNGEN -->
     
+    <!-- QUALITÄT & SLOGAN -->
+        <section id="qualitaet-slogan" class="py-20 bg-[#F3F1EC]">
+          <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between mb-8" data-aos="fade-up">
+              <div>
+                <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-3">Qualität</p>
+                <h2 class="text-2xl md:text-3xl font-semibold">Wofür wir stehen</h2>
+              </div>
+              <span class="hidden md:inline-flex items-center rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-slate-700 border border-slate-200">
+                Hochwertig · Sicher · Biokompatibel
+              </span>
+            </div>
 
+            <div class="grid md:grid-cols-2 gap-6" data-aos="fade-up">
+              <!-- Qualität -->
+              <div class="rounded-3xl bg-white border border-slate-200/70 p-7 shadow-sm">
+                <h3 class="text-lg font-semibold mb-4">Qualität</h3>
+                <ul class="space-y-3 text-sm text-slate-700">
+                  <li class="flex gap-3">
+                    <span class="mt-1.5 h-2 w-2 rounded-full bg-brandGoldDark shrink-0"></span>
+                    <span>Verwendung hochwertiger, biokompatibler Materialien.</span>
+                  </li>
+                  <li class="flex gap-3">
+                    <span class="mt-1.5 h-2 w-2 rounded-full bg-brandGoldDark shrink-0"></span>
+                    <span>Einhaltung von Gesundheits- und Sicherheitsstandards.</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Slogan -->
+              <div class="rounded-3xl bg-white border border-slate-200/70 p-7 shadow-sm">
+                <h3 class="text-lg font-semibold mb-4">Slogan</h3>
+                <div class="space-y-4 text-sm text-slate-700">
+                  <p class="rounded-2xl bg-brandSoft px-4 py-3 border border-slate-200/60">
+                    Fachkenntnis und Erfahrung für zuverlässige und schnelle Zahntechnik.
+                  </p>
+                  <p class="rounded-2xl bg-brandSoft px-4 py-3 border border-slate-200/60">
+                    Zuverlässig und schnell – Ihr regionaler Experte in Nürnberg mit Erfahrung.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
     <!-- TEAM -->
     <section id="team" class="py-20 bg-white">
@@ -714,7 +737,7 @@
                 <p class="font-semibold">Dentallabor Kobelt</p>
                 <p>Steuerwald-Landmann-Straße 72<br>90491 Nürnberg</p>
                 <p class="mt-2">
-                Telefon:  +49 911-25384393,
+                Telefon:  +49 911-25384393, \n 
                           +49 911-25383740<br>
                 E-Mail: info@dentallabor-kobelt.de
                 </p>
@@ -815,9 +838,6 @@
     </div>
   </div>
 
-  <!-- AOS Script эхлээд ачаална -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
   <script>
     // Jahr im Footer
     document.getElementById('year').textContent = new Date().getFullYear();
@@ -830,7 +850,7 @@
     });
 
     // AOS init (AOS ачаалагдсаны дараа)
-    AOS.init({
+    if (window.AOS) AOS.init({
       duration: 700,
       easing: 'ease-out-cubic',
       once: true
