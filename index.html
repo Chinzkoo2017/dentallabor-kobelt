@@ -79,27 +79,28 @@
             <div class="hidden md:flex items-center gap-6 text-sm font-medium">
         <a href="#ueber-uns" class="hover:text-brandGoldDark">Über uns</a>
 
-        <!-- Leistungen dropdown -->
-        <div class="relative group">
-          <a href="#leistungen" class="hover:text-brandGoldDark inline-flex items-center gap-1">
-            Leistungen <span class="text-slate-400 group-hover:text-brandGoldDark transition">⌄</span>
-          </a>
-          <div class="absolute left-0 mt-3 w-64 rounded-2xl bg-white shadow-xl border border-slate-100 p-2 hidden group-hover:block">
-            <a href="#leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Leistungen im Überblick</a>
-            <a href="#digitale-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Digitale Leistungen</a>
-            <a href="#analoge-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Analoge Leistungen</a>
-          </div>
-        </div>
+        <!-- Leistungen dropdown (hover + click) -->
+<div class="relative group" id="leistungenDropdown">
+  <button type="button"
+          class="hover:text-brandGoldDark inline-flex items-center gap-1"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="leistungenDropdownMenu">
+    Leistungen <span class="text-slate-400 group-hover:text-brandGoldDark transition">⌄</span>
+  </button>
 
-        <div id="leistungenMenu"
-              class="absolute left-0 mt-3 w-64 rounded-2xl bg-white shadow-xl border border-slate-100 p-2 hidden">
-          <a href="#leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Leistungen im Überblick</a>
-          <a href="#qualitaet-slogan" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Qualität &amp; Slogan</a>
-          <a href="#team" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Team</a>
-          <a href="#kontakt" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Kontakt</a>
-        </div>
-
-        <a href="#team" class="hover:text-brandGoldDark">Team</a>
+  <!-- Hover-bridge wrapper: pt-3 нь hover тасрах зайг "дүүргэнэ" -->
+  <div class="absolute left-0 top-full pt-3 w-64 hidden group-hover:block z-50"
+       id="leistungenDropdownMenu">
+    <div class="rounded-2xl bg-white shadow-xl border border-slate-100 p-2">
+      <a href="#leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Leistungen im Überblick</a>
+      <a href="#digitale-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Digitale Leistungen</a>
+      <a href="#analoge-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Analoge Leistungen</a>
+    </div>
+  </div>
+</div>
+</div>
+<a href="#team" class="hover:text-brandGoldDark">Team</a>
         <a href="#kontakt" class="hover:text-brandGoldDark">Kontakt</a>
         <a href="#kontakt"
                 class="inline-flex items-center rounded-full bg-brandGoldDark px-4 py-1.5 text-brand shadow-sm 
@@ -616,51 +617,75 @@
     <!-- LEISTUNGEN -->
     
     <!-- QUALITÄT & SLOGAN -->
-        <section id="qualitaet-slogan" class="py-20 bg-white">
-          <div class="max-w-6xl mx-auto px-4">
-            <div class="flex items-center justify-between mb-8" data-aos="fade-up">
-              <div>
-                <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-3">Qualität</p>
-                <h2 class="text-2xl md:text-3xl font-semibold">Wofür wir stehen</h2>
-              </div>
-              <span class="hidden md:inline-flex items-center rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-slate-700 border border-slate-200">
-                Hochwertig · Sicher · Biokompatibel
-              </span>
-            </div>
+        <section id="qualitaet-slogan" class="py-20 bg-gradient-to-br from-[#F5F5F4] via-white to-[#EFE8DA]">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex items-end justify-between gap-6 mb-10" data-aos="fade-up">
+      <div>
+        <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-3">Qualität</p>
+        <h2 class="text-2xl md:text-3xl font-semibold leading-tight">Wofür wir stehen</h2>
+        <div class="h-0.5 bg-brandGoldDark/70 rounded-full mt-4 w-24"></div>
+      </div>
 
-            <div class="grid md:grid-cols-2 gap-6" data-aos="fade-up">
-              <!-- Qualität -->
-              <div class="rounded-3xl bg-white border border-slate-200/70 p-7 shadow-sm">
-                <h3 class="text-lg font-semibold mb-4">Qualität</h3>
-                <ul class="space-y-3 text-sm text-slate-700">
-                  <li class="flex gap-3">
-                    <span class="mt-1.5 h-2 w-2 rounded-full bg-brandGoldDark shrink-0"></span>
-                    <span>Verwendung hochwertiger, biokompatibler Materialien.</span>
-                  </li>
-                  <li class="flex gap-3">
-                    <span class="mt-1.5 h-2 w-2 rounded-full bg-brandGoldDark shrink-0"></span>
-                    <span>Einhaltung von Gesundheits- und Sicherheitsstandards.</span>
-                  </li>
-                </ul>
-              </div>
+      <span class="hidden md:inline-flex items-center rounded-full bg-white/80 px-3 py-1 text-[11px] font-medium text-slate-700 border border-slate-200 shadow-sm">
+        Hochwertig · Sicher · Biokompatibel
+      </span>
+    </div>
 
-              <!-- Slogan -->
-              <div class="rounded-3xl bg-white border border-slate-200/70 p-7 shadow-sm">
-                <h3 class="text-lg font-semibold mb-4">Slogan</h3>
-                <div class="space-y-4 text-sm text-slate-700">
-                  <p class="rounded-2xl bg-brandSoft px-4 py-3 border border-slate-200/60">
-                    Fachkenntnis und Erfahrung für zuverlässige und schnelle Zahntechnik.
-                  </p>
-                  <p class="rounded-2xl bg-brandSoft px-4 py-3 border border-slate-200/60">
-                    Zuverlässig und schnell – Ihr regionaler Experte in Nürnberg mit Erfahrung.
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div class="grid md:grid-cols-2 gap-6" data-aos="fade-up">
+      <!-- Qualität -->
+      <div class="rounded-3xl bg-white/90 border border-slate-200/70 p-7 shadow-sm hover:shadow-md transition relative overflow-hidden">
+        <div class="absolute left-0 top-0 h-full w-1.5 bg-brandGoldDark/70"></div>
+
+        <div class="flex items-start gap-3 mb-4">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandSoft text-brandGoldDark text-base border border-slate-200/60">
+            ✓
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Qualität</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Materialien, Standards &amp; Kontrolle</p>
           </div>
-        </section>
+        </div>
 
-    <!-- TEAM -->
+        <ul class="space-y-3 text-sm text-slate-700">
+          <li class="flex gap-3">
+            <span class="mt-2 h-2 w-2 rounded-full bg-brandGoldDark shrink-0"></span>
+            <span>Verwendung hochwertiger, biokompatibler Materialien.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-2 w-2 rounded-full bg-brandGoldDark shrink-0"></span>
+            <span>Einhaltung von Gesundheits- und Sicherheitsstandards.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Slogan -->
+      <div class="rounded-3xl bg-white/90 border border-slate-200/70 p-7 shadow-sm hover:shadow-md transition relative overflow-hidden">
+        <div class="absolute left-0 top-0 h-full w-1.5 bg-brandGold/70"></div>
+
+        <div class="flex items-start gap-3 mb-4">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-brandSoft text-brandGoldDark text-base border border-slate-200/60">
+            ✨
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Slogan</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Klar, kurz, vertrauenswürdig</p>
+          </div>
+        </div>
+
+        <div class="space-y-4 text-sm text-slate-700">
+          <div class="rounded-2xl bg-white border border-slate-200/70 px-4 py-3 shadow-sm">
+            <p class="font-medium">„Fachkenntnis und Erfahrung für zuverlässige und schnelle Zahntechnik.“</p>
+          </div>
+          <div class="rounded-2xl bg-white border border-slate-200/70 px-4 py-3 shadow-sm">
+            <p class="font-medium">„Zuverlässig und schnell – Ihr regionaler Experte in Nürnberg mit Erfahrung.“</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
     <section id="team" class="py-20 bg-[#F3F1EC]">
         <div class="max-w-6xl mx-auto px-4 mt-8 mb-10">
 
@@ -857,6 +882,38 @@
     });
   </script>
 </footer>
+
+<script>
+  // Leistungen dropdown: allow click toggle (especially useful on touch devices)
+  (function () {
+    const root = document.getElementById('leistungenDropdown');
+    const btn = root?.querySelector('button[aria-controls="leistungenDropdownMenu"]');
+    const menu = document.getElementById('leistungenDropdownMenu');
+    if (!root || !btn || !menu) return;
+
+    function closeMenu() {
+      menu.classList.add('hidden');
+      btn.setAttribute('aria-expanded', 'false');
+    }
+
+    function openMenu() {
+      menu.classList.remove('hidden');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isHidden = menu.classList.contains('hidden');
+      if (isHidden) openMenu(); else closeMenu();
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!root.contains(e.target)) closeMenu();
+    });
+
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  })();
+</script>
 
 </body>
 </html>
