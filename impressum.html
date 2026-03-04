@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum – Dentallabor Kobelt</title>
+    <meta name="robots" content="noindex, nofollow"> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: '#2B3549',
+              brandSoft: '#F5F5F4',
+              brandGold: '#D6B977',
+              brandGoldDark: '#B89A5A',
+              brandGray: '#8A8F98',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-brandSoft text-brand flex flex-col min-h-screen scroll-smooth">
+
+  <header class="sticky top-0 z-20 bg-white/80 backdrop-blur border-b border-slate-200">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.jpg" alt="Dentallabor Kobelt Logo" class="h-10 w-auto object-contain">
+      </a>
+      <a href="index.html" class="text-sm font-medium text-slate-600 hover:text-brandGoldDark transition">&larr; Zurück zur Startseite</a>
+    </nav>
+  </header>
+
+  <main class="flex-grow py-16">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-slate-200">
+        <h1 class="text-3xl font-bold mb-8 text-brand">Impressum</h1>
+        
+        <div class="space-y-6 text-slate-700 leading-relaxed text-sm md:text-base">
+          
+          <section>
+            <h2 class="text-lg font-semibold text-brand mb-2">Angaben gemäß § 5 TMG</h2>
+            <p>
+              Dentallabor Kobelt<br>
+              Steuerwald-Landmann-Straße 72<br>
+              90491 Nürnberg
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-semibold text-brand mb-2">Vertreten durch:</h2>
+            <p>Erdenejargal Kobelt (Zahntechnikermeister)</p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-semibold text-brand mb-2">Kontakt</h2>
+            <p>
+              Telefon: +49 911-25384393<br>
+              Telefon: +49 911-25383740<br>
+              E-Mail: info@dentallabor-kobelt.de
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-semibold text-brand mb-2">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
+            <p>
+              Berufsbezeichnung: Zahntechnikermeister (verliehen in der Bundesrepublik Deutschland)<br>
+              Zuständige Kammer: Handwerkskammer für Mittelfranken <br>
+              Geltende berufsrechtliche Regelungen: Handwerksordnung (HwO)
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-semibold text-brand mb-2">Umsatzsteuer-ID</h2>
+            <p>
+              Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+              <strong> DE326959276 </strong>
+            </p>
+          </section>
+
+          <section>
+            <h2 class="text-lg font-semibold text-brand mb-2">Verbraucherstreitbeilegung/Universalschlichtungsstelle</h2>
+            <p>
+              Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-6 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col items-center justify-center gap-2 text-xs text-slate-500">
+      <p>© <span id="year"></span> Dentallabor Kobelt. Alle Rechte vorbehalten.</p>
+    </div>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</body>
+</html>
