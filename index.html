@@ -127,12 +127,19 @@
             </button>
 
             <div class="absolute left-0 top-full pt-3 w-64 hidden group-hover:block z-50"
-                 id="leistungenDropdownMenu">
-              <div class="rounded-2xl bg-white shadow-xl border border-slate-100 p-2">
-                <a href="#leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Leistungen im Überblick</a>
-                <a href="#digitale-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Digitale Leistungen</a>
-                <a href="#analoge-leistungen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Analoge Leistungen</a>
-              </div>
+                id="leistungenDropdownMenu">
+            <div class="rounded-2xl bg-white shadow-xl border border-slate-100 p-2">
+                <a href="#leistungen" class="block rounded-xl px-3 py-2 text-sm font-semibold text-brand bg-slate-50 mb-1">Alle Leistungen</a>
+                <a href="#festsitzend" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Festsitzender Zahnersatz</a>
+                <a href="#herausnehmbar" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Herausnehmbarer Zahnersatz</a>
+                <a href="#implantate" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Implantatprothetik</a>
+                <a href="#schienen" class="block rounded-xl px-3 py-2 text-sm hover:bg-slate-50">Schienen & Provisorien</a>
+                <div class="border-t border-slate-100 my-1"></div>
+                    <a href="tap-schiene.html" class="flex items-center justify-between rounded-xl px-3 py-2 text-sm font-medium text-brandGoldDark hover:bg-slate-50">
+                    TAP® Schnarcherschiene
+                    <span class="rounded bg-red-100 px-1.5 py-0.5 text-[8px] font-bold text-red-600 uppercase">Neu</span>
+                    </a>
+            </div>
             </div>
           </div>
           <a href="#team" class="hover:text-brandGoldDark">Team</a>
@@ -221,395 +228,223 @@
     </section>
 
     <section id="leistungen" class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4">
-        <div data-aos="fade-left">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="text-xl font-semibold">Unsere Leistungen im Überblick</h3>
-              <span class="hidden md:inline-flex items-center rounded-full bg-brandSoft px-3 py-1 text-[11px] font-medium text-sky-700">
-                Präzise · Ästhetisch · Funktionell
-              </span>
+    <div class="max-w-6xl mx-auto px-4">
+        <div data-aos="fade-up">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8">
+            <div>
+            <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-2">Unser Portfolio</p>
+            <h3 class="text-2xl md:text-3xl font-semibold text-brand">Leistungen im Überblick</h3>
             </div>
+            <span class="inline-flex items-center rounded-full bg-brandSoft px-4 py-1.5 text-xs font-medium text-slate-700">
+            Digital & Analog kombiniert für höchste Präzision
+            </span>
+        </div>
+        
+        <!-- // ---------------------------------------------- -->
+        <div class="mb-10 rounded-3xl bg-gradient-to-br from-brand via-slate-800 to-brand p-8 md:p-10 relative overflow-hidden shadow-2xl shadow-brand/20" data-aos="fade-up">
+        <div class="absolute -top-24 -right-24 w-64 h-64 bg-brandGoldDark/20 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="max-w-xl">
+            <div class="inline-flex items-center gap-2 rounded-full bg-brandGoldDark/20 border border-brandGoldDark/30 px-3 py-1 mb-4">
+                <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brandGold opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-brandGold"></span>
+                </span>
+                <span class="text-[11px] font-bold tracking-widest text-brandGold uppercase">Neu im Labor</span>
+            </div>
+            
+            <h4 class="text-2xl md:text-3xl font-bold text-white mb-3">Zertifizierte TAP®-Schiene</h4>
+            <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                Die effektive Lösung gegen Schnarchen und Schlafapnoe. Wir sind offiziell zertifiziert für die Herstellung der innovativen TAP®-Schienen. Bieten Sie Ihren Patienten wieder ruhige Nächte!
+            </p>
+            </div>
+            
+            <div class="shrink-0">
+            <a href="tap-schiene.html" class="inline-flex items-center justify-center rounded-full bg-brandGoldDark px-6 py-3 text-sm font-semibold text-brand shadow-lg hover:bg-brandGold transition-all group">
+                Mehr erfahren
+                <span class="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+            </a>
+            </div>
+        </div>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
 
-            <div class="space-y-8">
-
-              <div id="digitale-leistungen" class="rounded-3xl border border-slate-200/80 bg-slate-50/40 p-6 md:p-7">
-                <div class="flex items-end justify-between gap-4 mb-4">
-                  <div>
-                    <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-2">Digitale Leistungen</p>
-                    <h4 class="text-lg md:text-xl font-semibold">CAD/CAM & 3D-Druck</h4>
-                  </div>
-                  <span class="hidden md:inline-flex items-center rounded-full bg-brandSoft px-3 py-1 text-[11px] font-medium text-slate-700">
-                    Effizient · Reproduzierbar · Passgenau
-                  </span>
+            <details id="festsitzend" class="group rounded-2xl bg-white border border-slate-200 p-5 shadow-sm hover:shadow-md transition-all open:bg-slate-50/50">
+            <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-lg shrink-0">🦷</span>
+                <div>
+                    <h4 class="font-semibold text-brand text-lg">Festsitzender Zahnersatz</h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="inline-flex items-center rounded-md bg-sky-50 px-2 py-0.5 text-[10px] font-medium text-sky-700 border border-sky-100">🖥️ CAD/CAM</span>
+                    <span class="inline-flex items-center rounded-md bg-amber-50 px-2 py-0.5 text-[10px] font-medium text-amber-700 border border-amber-100">🖐️ Klassisch</span>
+                    </div>
                 </div>
-
-                <div class="grid md:grid-cols-2 gap-5">
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🖥️</span>
-                        <div>
-                          <h4 class="font-semibold">Digitale Dienstleistungen</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Digitale Abformung (Intraoralscan-Verarbeitung)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>CAD-Design von Zahnersatz</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Virtuelles Wax-up / Mock-up</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🦷</span>
-                        <div>
-                          <h4 class="font-semibold">CAD/CAM – festsitzender Zahnersatz</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Vollkeramische Kronen (Zirkon, Lithiumdisilikat, Hybridkeramik)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teilkronen (Inlays, Onlays, Overlays)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Brücken (monolithisch oder verblendet)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Implantatgetragene Kronen und Brücken</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teleskopkronen (Primär- und Sekundärkronen)</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🖨️</span>
-                        <div>
-                          <h4 class="font-semibold">3D-Druck</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>3D-gedruckte Modelle</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>3D-gedruckte Bohrschablonen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>3D-gedruckte Schienen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>3D-gedruckte Prothesenbasen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>3D-gedruckte Provisorien</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">👄</span>
-                        <div>
-                          <h4 class="font-semibold">Herausnehmbarer Zahnersatz</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teilprothesen (Modellguss, CAD/CAM)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Vollprothesen (klassisch oder digital)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teleskop- und Kombinationsarbeiten</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Implantatgetragene Prothesen</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🌙</span>
-                        <div>
-                          <h4 class="font-semibold">Schienen</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Aufbiss- und Knirscherschienen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Bleaching-Schienen</span></li>
-                      <li class="flex gap-2">
-                        <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span>
-                        <a href="tap-schiene.html" class="text-brandGoldDark hover:underline font-semibold flex items-center gap-1 transition-all">
-                          Zertifizierter TAP® Schnarcher-Schiene 
-                          <span class="text-lg">→</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">⏱️</span>
-                        <div>
-                          <h4 class="font-semibold">Provisorische Versorgungen</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Kurz- und Langzeitprovisorien</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Implantatprovisorien</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🧩</span>
-                        <div>
-                          <h4 class="font-semibold">Implantologische Leistungen</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Digitale Implantatplanung</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Bohrschablonen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Suprakonstruktionen</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">✨</span>
-                        <div>
-                          <h4 class="font-semibold">Ästhetische Arbeiten</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Veneers (Keramik / Komposit)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Non-Prep Veneers</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Individuelle Farb- und Formanpassung</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Verblendungen</span></li>
-                    </ul>
-                  </details>
                 </div>
-              </div>
-
-              <div id="analoge-leistungen" class="rounded-3xl border border-slate-200/80 bg-slate-50/40 p-6 md:p-7">
-                <div class="flex items-end justify-between gap-4 mb-4">
-                  <div>
-                    <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-2">Analoge Leistungen</p>
-                    <h4 class="text-lg md:text-xl font-semibold">Klassisches Handwerk</h4>
-                  </div>
-                  <span class="hidden md:inline-flex items-center rounded-full bg-white px-3 py-1 text-[11px] font-medium text-slate-700 border border-slate-200">
-                    Bewährt · Präzise · Individuell
-                  </span>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-5">
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">👄</span>
-                        <div>
-                          <h4 class="font-semibold">Klassische Modellherstellung</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Herstellung von Gipsmodellen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Sägeschnittmodelle</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Artikulator-Montage</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Bissregistrate (analog)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Kontroll- und Situationsmodelle</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🌙</span>
-                        <div>
-                          <h4 class="font-semibold">Festsitzender Zahnersatz</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Metallkeramische Kronen (VMK)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Vollgusskronen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teilkronen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Inlays / Onlays (Gold, Keramik)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Brücken (Metall / Metallkeramik)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Verblendungen (Keramik, Kunststoff)</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">⏱️</span>
-                        <div>
-                          <h4 class="font-semibold">Herausnehmbarer Zahnersatz</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Modellgussprothesen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teilprothesen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Vollprothesen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Interimsprothesen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Kombinationsarbeiten</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🧩</span>
-                        <div>
-                          <h4 class="font-semibold">Kombinierter Zahnersatz</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teleskoparbeiten</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">✨</span>
-                        <div>
-                          <h4 class="font-semibold">Implantatbezogene Arbeiten</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Implantatgetragene Kronen und Brücken (analog)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Provisorien auf Implantaten</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🧱</span>
-                        <div>
-                          <h4 class="font-semibold">Schienen</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Aufbissschienen/Knirscherschienen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Michigainschienen</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Bleaching-Schienen</span></li>
-                      <li class="flex gap-2">
-                        <span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span>
-                        <a href="tap-schiene.html" class="text-brandGoldDark hover:underline font-semibold flex items-center gap-1 transition-all">
-                          Zertifizierter TAP® Schnarcher-Schiene 
-                          <span class="text-lg">→</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">⚙️</span>
-                        <div>
-                          <h4 class="font-semibold">Provisorien</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Kurzzeitprovisorien</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Langzeitprovisorien</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Kunststoffprovisorien</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🖥️</span>
-                        <div>
-                          <h4 class="font-semibold">Ästhetische Laborarbeiten</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Keramische Schichttechnik</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Individuelle Farbabnahme (VITA-System)</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Charakterisierung von Zahnersatz</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Form- und Oberflächengestaltung</span></li>
-                    </ul>
-                  </details>
-
-                  <details class="group rounded-2xl bg-white border border-slate-100/80 p-5 shadow-sm hover:shadow-md transition">
-                    <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
-                      <div class="flex items-start gap-3">
-                        <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-base">🦷</span>
-                        <div>
-                          <h4 class="font-semibold">Manuelle Zusatzleistungen</h4>
-                          <p class="text-xs text-slate-500 mt-0.5">Auswahl unserer Leistungen</p>
-                        </div>
-                      </div>
-                      <span class="mt-2 text-slate-400 group-open:rotate-180 transition">⌄</span>
-                    </summary>
-                    <ul class="mt-4 space-y-2 text-sm text-slate-600">
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Wachsausstellung</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Klassisches Wax-up</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Manuelle Okklusionskorrektur</span></li>
-                      <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Endkontrolle und Politur</span></li>
-                    </ul>
-                  </details>
-                </div>
-              </div>
-
-              <div class="rounded-3xl bg-gradient-to-r from-brandSoft via-white to-[#E9E1D0] border border-brandGold/30 p-6">
-                <div class="flex flex-wrap items-center justify-between gap-3">
-                  <div>
-                    <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-2">Zusatzleistungen</p>
-                    <h4 class="text-lg font-semibold">Spezielle Ergänzungen nach Bedarf</h4>
-                  </div>
-                  <span class="inline-flex items-center rounded-full bg-white/70 px-3 py-1 text-[11px] font-medium text-brandGoldDark">
-                    Individuell abgestimmt
-                  </span>
-                </div>
-                <ul class="mt-4 space-y-2 text-sm text-slate-700">
-                  <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Laserfügetechnik</span></li>
-                  <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Friktionsverstärkung (NEM / EM)</span></li>
-                  <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Erweiterung bei Modellguss, uvm.</span></li>
+                <span class="mt-2 text-slate-400 group-open:rotate-180 transition text-xl">⌄</span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-slate-100">
+                <p class="text-xs text-slate-500 mb-3">Wir fertigen Kronen und Brücken nach höchsten ästhetischen Ansprüchen – digital gefräst oder klassisch geschichtet.</p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Vollkeramik (Zirkon, Lithiumdisilikat, Hybridkeramik)</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Metallkeramische Kronen (VMK) & Vollgusskronen</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teilkronen, Inlays, Onlays & Overlays</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teleskopkronen (Primär- und Sekundärkronen)</span></li>
                 </ul>
-              </div>
-
             </div>
-          </div>
-      </div>
+            </details>
+
+            <details id="herausnehmbar" class="group rounded-2xl bg-white border border-slate-200 p-5 shadow-sm hover:shadow-md transition-all open:bg-slate-50/50">
+            <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-lg shrink-0">👄</span>
+                <div>
+                    <h4 class="font-semibold text-brand text-lg">Herausnehmbarer Zahnersatz</h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="inline-flex items-center rounded-md bg-sky-50 px-2 py-0.5 text-[10px] font-medium text-sky-700 border border-sky-100">🖨️ 3D-Druck / CAD</span>
+                    <span class="inline-flex items-center rounded-md bg-amber-50 px-2 py-0.5 text-[10px] font-medium text-amber-700 border border-amber-100">🖐️ Manuell</span>
+                    </div>
+                </div>
+                </div>
+                <span class="mt-2 text-slate-400 group-open:rotate-180 transition text-xl">⌄</span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-slate-100">
+                <p class="text-xs text-slate-500 mb-3">Von der klassischen Modellgussprothese bis zur digital gedruckten Basis.</p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Modellgussprothesen & Teilprothesen</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Vollprothesen (klassisch oder digital)</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Teleskop- und Kombinationsarbeiten</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Interimsprothesen</span></li>
+                </ul>
+            </div>
+            </details>
+
+            <details id="implantate" class="group rounded-2xl bg-white border border-slate-200 p-5 shadow-sm hover:shadow-md transition-all open:bg-slate-50/50">
+            <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-lg shrink-0">🧩</span>
+                <div>
+                    <h4 class="font-semibold text-brand text-lg">Implantatprothetik</h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="inline-flex items-center rounded-md bg-sky-50 px-2 py-0.5 text-[10px] font-medium text-sky-700 border border-sky-100">🖥️ Digital Planning</span>
+                    </div>
+                </div>
+                </div>
+                <span class="mt-2 text-slate-400 group-open:rotate-180 transition text-xl">⌄</span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-slate-100">
+                <p class="text-xs text-slate-500 mb-3">Präzise Suprakonstruktionen und Planungshilfen für die moderne Implantologie.</p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Implantatgetragene Kronen und Brücken</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Implantatgetragene Prothesen (Steg, Locator etc.)</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Digitale Implantatplanung</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>3D-gedruckte Bohrschablonen</span></li>
+                </ul>
+            </div>
+            </details>
+
+            <details id="schienen" class="group rounded-2xl bg-white border border-slate-200 p-5 shadow-sm hover:shadow-md transition-all open:bg-slate-50/50">
+            <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-lg shrink-0">🌙</span>
+                <div>
+                    <h4 class="font-semibold text-brand text-lg">Schienen & Provisorien</h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="inline-flex items-center rounded-md bg-sky-50 px-2 py-0.5 text-[10px] font-medium text-sky-700 border border-sky-100">🖨️ 3D-Druck</span>
+                    <span class="inline-flex items-center rounded-md bg-emerald-50 px-2 py-0.5 text-[10px] font-medium text-emerald-700 border border-emerald-100">🏅 Zertifiziert</span>
+                    </div>
+                </div>
+                </div>
+                <span class="mt-2 text-slate-400 group-open:rotate-180 transition text-xl">⌄</span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-slate-100">
+                <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Aufbiss-, Knirscher- und Michiganschienen</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Bleaching-Schienen</span></li>
+                <li class="flex gap-3 items-center p-2 -ml-2 rounded-lg bg-amber-50/50 border border-amber-100/50 transition hover:bg-amber-50">
+                    <span class="h-2 w-2 rounded-full bg-brandGoldDark shrink-0"></span>
+                    <a href="tap-schiene.html" class="text-brandGoldDark hover:text-amber-600 font-semibold flex flex-wrap items-center gap-2 transition-all w-full">
+                        Zertifizierte TAP® Schnarcherschiene 
+                        <span class="inline-flex items-center rounded bg-red-500 px-1.5 py-0.5 text-[9px] font-bold text-white uppercase tracking-wider animate-pulse">
+                        Neu
+                        </span>
+                        <span class="ml-auto text-lg group-hover:translate-x-1 transition-transform">→</span>
+                    </a>
+                    </li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Kurz- und Langzeitprovisorien (gedruckt oder Kunststoff)</span></li>
+                </ul>
+            </div>
+            </details>
+
+            <details class="group rounded-2xl bg-white border border-slate-200 p-5 shadow-sm hover:shadow-md transition-all open:bg-slate-50/50">
+            <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-lg shrink-0">✨</span>
+                <div>
+                    <h4 class="font-semibold text-brand text-lg">Ästhetik & Individualisierung</h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="inline-flex items-center rounded-md bg-amber-50 px-2 py-0.5 text-[10px] font-medium text-amber-700 border border-amber-100">🎨 Handarbeit</span>
+                    </div>
+                </div>
+                </div>
+                <span class="mt-2 text-slate-400 group-open:rotate-180 transition text-xl">⌄</span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-slate-100">
+                <p class="text-xs text-slate-500 mb-3">Die perfekte Illusion der Natur durch meisterhafte Schichttechnik.</p>
+                <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Veneers & Non-Prep Veneers (Keramik / Komposit)</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Keramische Schichttechnik & Charakterisierung</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Individuelle Farbabnahme (VITA-System) im Labor</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Virtuelles & Klassisches Wax-up / Mock-up</span></li>
+                </ul>
+            </div>
+            </details>
+
+            <details class="group rounded-2xl bg-white border border-slate-200 p-5 shadow-sm hover:shadow-md transition-all open:bg-slate-50/50">
+            <summary class="cursor-pointer list-none flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brandSoft text-brandGoldDark text-lg shrink-0">🌐</span>
+                <div>
+                    <h4 class="font-semibold text-brand text-lg">Digitale Services & Modelle</h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="inline-flex items-center rounded-md bg-sky-50 px-2 py-0.5 text-[10px] font-medium text-sky-700 border border-sky-100">🖥️ 100% Digital</span>
+                    </div>
+                </div>
+                </div>
+                <span class="mt-2 text-slate-400 group-open:rotate-180 transition text-xl">⌄</span>
+            </summary>
+            <div class="mt-4 pt-4 border-t border-slate-100">
+                <ul class="space-y-2 text-sm text-slate-600">
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Verarbeitung aller gängigen Intraoralscans</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>CAD-Design Dienstleistungen</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>3D-gedruckte Modelle</span></li>
+                <li class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Herstellung klassischer Gips- & Sägeschnittmodelle</span></li>
+                </ul>
+            </div>
+            </details>
+
+        </div>
+
+        <div class="mt-8 rounded-3xl bg-gradient-to-r from-brandSoft via-white to-[#E9E1D0] border border-brandGold/30 p-6 md:p-8">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+            <div>
+                <p class="text-xs font-semibold tracking-[0.25em] text-brandGoldDark uppercase mb-2">Reparaturen & Spezialtechnik</p>
+                <h4 class="text-xl font-semibold text-brand">Zusatzleistungen nach Bedarf</h4>
+            </div>
+            <span class="inline-flex items-center rounded-full bg-white px-4 py-1.5 text-xs font-medium text-brandGoldDark shadow-sm">
+                Individuell abgestimmt
+            </span>
+            </div>
+            <div class="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm text-slate-700">
+            <div class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Laserfügetechnik</span></div>
+            <div class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Friktionsverstärkung (NEM / EM)</span></div>
+            <div class="flex gap-2"><span class="mt-1.5 h-1.5 w-1.5 rounded-full bg-brandGoldDark shrink-0"></span><span>Prothesenerweiterung & Reparaturen</span></div>
+            </div>
+        </div>
+
+        </div>
+    </div>
     </section>
 
     <section id="ueber-uns" class="py-20 bg-[#F3F1EC]">
