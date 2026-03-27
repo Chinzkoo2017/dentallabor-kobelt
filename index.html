@@ -461,7 +461,7 @@
             <div class="h-0.5 bg-brandGoldDark rounded-full mb-4 w-[100%]"></div>
 
             <p class="text-slate-600 mb-4">
-              Mit über 17 Jahren Berufserfahrung verbindet Zahntechnikermeister
+              Mit über <span class="exp-years">20</span> Jahren Berufserfahrung verbindet Zahntechnikermeister
               <span class="font-medium">Erdenejargal Kobelt</span> traditionelle Handwerkskunst
               mit moderner Technologie.
             </p>
@@ -510,7 +510,7 @@
             <h3 class="text-2xl font-semibold mb-3">Ihr Zahntechnikermeister</h3>
 
             <p class="text-slate-600 mb-4 leading-relaxed">
-                Erdenejargal Kobelt – über 17 Jahre Erfahrung in moderner sowie traditioneller Zahntechnik.
+                Erdenejargal Kobelt – über <span class="exp-years">20</span> Jahre Erfahrung in moderner sowie traditioneller Zahntechnik.
                 Präzision, Ästhetik und Leidenschaft vereint in jeder Arbeit.
             </p>
 
@@ -654,6 +654,10 @@
     <script>
       // Jahr im Footer
       document.getElementById('year').textContent = new Date().getFullYear();
+
+      // Erfahrungsjahre berechnen (seit 2004)
+      const currentYear = new Date().getFullYear();
+      document.querySelectorAll('.exp-years').forEach(el => el.textContent = currentYear - 2004);
 
       // Mobile-Menü toggle
       const btn = document.getElementById('menuBtn');
